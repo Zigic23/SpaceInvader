@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
+    tools:context="com.example.grupo8.spaceinvaders.GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:id="@+id/score"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/falcon"
+        android:id="@+id/naveJugador"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="disparo"/>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:background="@drawable/verdelaser"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/misilVerde"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:background="@drawable/laserrojo"
+        android:layout_marginTop="53dp"
+        android:id="@+id/misilRojo"
+        android:layout_alignTop="@+id/caza1"
+        android:layout_alignLeft="@+id/misilVerde"
+        android:layout_alignStart="@+id/misilVerde"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:id="@+id/lives"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/escudo1"
+        android:id="@+id/escudo2"
+        android:layout_above="@+id/naveJugador"
+        android:layout_alignLeft="@+id/naveJugador"
+        android:layout_alignStart="@+id/naveJugador"
+        android:layout_marginBottom="40dp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/escudo1"
+        android:id="@+id/escudo3"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="100dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/escudo1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:id="@+id/escudo1"
+        android:layout_alignParentBottom = "true"
+        android:layout_marginBottom="100dp"/>
+
+    <!--<ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/explosion"
+        android:id="@+id/explosion"
+        />-->
+
+
+</RelativeLayout>
