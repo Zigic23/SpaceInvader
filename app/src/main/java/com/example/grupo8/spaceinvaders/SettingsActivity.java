@@ -34,6 +34,7 @@ public class SettingsActivity extends Activity {
 
         SharedPreferences prefs = this.getSharedPreferences("SpaceInvaders", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
+        editor.apply();
         RelativeLayout theme = (RelativeLayout) findViewById(R.id.settings);
         if(0!=prefs.getInt("theme", 0))
             theme.setBackground( getResources().getDrawable(R.drawable.spaceinvadersback));

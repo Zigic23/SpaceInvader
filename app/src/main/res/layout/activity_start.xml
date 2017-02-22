@@ -11,6 +11,7 @@
     >
 
     <ImageButton
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal|bottom"
@@ -23,6 +24,7 @@
         android:layout_marginBottom="87dp" />
 
     <ImageButton
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal|bottom"
@@ -45,7 +47,7 @@
         android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:text="Conquista la galaxia"
+        android:text="@string/conquista_la_galaxia"
         android:layout_width="230dp"
         android:layout_height="160dp"
         android:id="@+id/textView2"

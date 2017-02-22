@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SpaceInvaders</string>
+    <string name="imagen">Imagen</string>
+    <string name="conquista_la_galaxia">Conquista la galaxia</string>
 </resources>

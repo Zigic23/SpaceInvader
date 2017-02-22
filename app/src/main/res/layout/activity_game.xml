@@ -20,6 +20,7 @@
         android:id="@+id/score"/>
 
     <ImageButton
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal|bottom"
@@ -30,6 +31,7 @@
         android:onClick="disparo"/>
 
     <ImageView
+        android:contentDescription="@string/imagen"
         android:layout_width="3dp"
         android:layout_height="20dp"
         android:background="@drawable/verdelaser"
@@ -39,12 +41,12 @@
         android:visibility="invisible" />
 
     <ImageView
+        android:contentDescription="@string/imagen"
         android:layout_width="3dp"
         android:layout_height="20dp"
         android:background="@drawable/laserrojo"
         android:layout_marginTop="53dp"
         android:id="@+id/misilRojo"
-        android:layout_alignTop="@+id/caza1"
         android:layout_alignLeft="@+id/misilVerde"
         android:layout_alignStart="@+id/misilVerde"
         android:visibility="visible" />
@@ -63,6 +65,7 @@
         android:layout_marginEnd="49dp" />
 
     <ImageView
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/escudo1"
@@ -73,6 +76,7 @@
         android:layout_marginBottom="40dp"/>
 
     <ImageView
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/escudo1"
@@ -84,6 +88,7 @@
         android:layout_marginBottom="100dp" />
 
     <ImageView
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/escudo1"

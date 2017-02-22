@@ -11,6 +11,7 @@
     >
 
     <ImageButton
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal|bottom"
@@ -45,6 +46,7 @@
         android:layout_alignParentEnd="true" />
 
     <ImageView
+        android:contentDescription="@string/imagen"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal|bottom"
