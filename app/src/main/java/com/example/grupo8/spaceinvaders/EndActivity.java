@@ -16,6 +16,7 @@ import org.w3c.dom.Text;
 public class EndActivity extends Activity {
     private TextView tx;
     private TextView scored;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
