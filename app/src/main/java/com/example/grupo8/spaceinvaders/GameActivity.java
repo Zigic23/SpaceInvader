@@ -426,7 +426,19 @@ public class GameActivity extends Activity {
 
     private void calcularSentido(){
         if(sentidoEnemigo){
-            if (enemigos[4].getVisibility()==View.VISIBLE
+            for (int i = 4; i > -1; i--){
+                if (enemigos[i].getVisibility()==View.VISIBLE
+                        ||enemigos[i+5].getVisibility()==View.VISIBLE
+                        ||enemigos[i+10].getVisibility()==View.VISIBLE
+                        ||enemigos[i+15].getVisibility()==View.VISIBLE){
+                    if (enemigos[i].getX()+ enemigos[i].getLayoutParams().width >= width - 25){
+                        cambio();
+                        break;
+                    }
+                }
+            }
+            //codigo antiguo
+            /*if (enemigos[4].getVisibility()==View.VISIBLE
                     ||enemigos[9].getVisibility()==View.VISIBLE
                     ||enemigos[14].getVisibility()==View.VISIBLE
                     ||enemigos[19].getVisibility()==View.VISIBLE){
@@ -464,9 +476,21 @@ public class GameActivity extends Activity {
                 {
                     cambio();
                 }
-            }
+            }*/
         }else{
-            if (enemigos[0].getVisibility()==View.VISIBLE
+            for (int i = 0; i < 5; i++){
+                if (enemigos[i].getVisibility()==View.VISIBLE
+                        ||enemigos[i+5].getVisibility()==View.VISIBLE
+                        ||enemigos[i+10].getVisibility()==View.VISIBLE
+                        ||enemigos[i+15].getVisibility()==View.VISIBLE){
+                    if (enemigos[i].getX() <=25){
+                        cambio();
+                        break;
+                    }
+                }
+            }
+            //codigo antiguo
+            /*if (enemigos[0].getVisibility()==View.VISIBLE
                     ||enemigos[5].getVisibility()==View.VISIBLE
                     ||enemigos[10].getVisibility()==View.VISIBLE
                     ||enemigos[15].getVisibility()==View.VISIBLE){
@@ -505,7 +529,7 @@ public class GameActivity extends Activity {
                 {
                     cambio();
                 }
-            }
+            }*/
         }
     }
 
