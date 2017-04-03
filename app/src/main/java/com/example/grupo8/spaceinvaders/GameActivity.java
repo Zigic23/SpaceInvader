@@ -426,16 +426,19 @@ public class GameActivity extends Activity {
 
     private void calcularSentido(){
         if(sentidoEnemigo){
-            for (int i = 4; i > -1; i--){
+            boolean dead = false;
+            int i = 4;
+            while (i > -1 && !dead){
                 if (enemigos[i].getVisibility()==View.VISIBLE
                         ||enemigos[i+5].getVisibility()==View.VISIBLE
                         ||enemigos[i+10].getVisibility()==View.VISIBLE
                         ||enemigos[i+15].getVisibility()==View.VISIBLE){
                     if (enemigos[i].getX()+ enemigos[i].getLayoutParams().width >= width - 25){
                         cambio();
-                        break;
+                        dead = !dead;
                     }
                 }
+                i--;
             }
             //codigo antiguo
             /*if (enemigos[4].getVisibility()==View.VISIBLE
@@ -478,16 +481,19 @@ public class GameActivity extends Activity {
                 }
             }*/
         }else{
-            for (int i = 0; i < 5; i++){
+            int i = 0;
+            boolean dead = false;
+            while (i < 5 && !dead){
                 if (enemigos[i].getVisibility()==View.VISIBLE
                         ||enemigos[i+5].getVisibility()==View.VISIBLE
                         ||enemigos[i+10].getVisibility()==View.VISIBLE
                         ||enemigos[i+15].getVisibility()==View.VISIBLE){
                     if (enemigos[i].getX() <=25){
                         cambio();
-                        break;
+                        dead = !dead;
                     }
                 }
+                i++;
             }
             //codigo antiguo
             /*if (enemigos[0].getVisibility()==View.VISIBLE
