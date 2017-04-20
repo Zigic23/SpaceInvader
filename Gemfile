@@ -2,4 +2,4 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "calabash-android", "0.5.12"
+gem "calabash-android"
