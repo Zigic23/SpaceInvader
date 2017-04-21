@@ -22,7 +22,7 @@ rm -rf screenshot*
 rm -rf test_servers
 # sign apk
 tree ../app/build/outputs/apk/
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore ../app/build/outputs/apk/app-release-unsigned.apk
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore ../app/build/outputs/apk/app-release-unsigned.apk spaceinvaders
 tree ../app/build/outputs/apk/
 # resign apk
 bundle exec calabash-android build "../app/build/outputs/apk/app-release-unsigned.apk"
