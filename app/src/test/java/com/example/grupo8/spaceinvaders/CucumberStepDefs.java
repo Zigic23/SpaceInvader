@@ -8,6 +8,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -15,14 +18,13 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Pablo on 21/04/2017.
  */
-
-@CucumberOptions(
-        features = {"classpath:features"},
-        format = { "pretty","html: cucumber-html-reports", "json: cucumber-html-reports/cucumber.json" })
 public class CucumberStepDefs extends ActivityUnitTestCase<GameActivity> {
 
     GameActivity gameActivity;
@@ -114,4 +116,8 @@ public class CucumberStepDefs extends ActivityUnitTestCase<GameActivity> {
         assertEquals(l, gameActivity.lives);
     }
 
+    @Test
+    public void test_sanity() throws Exception {
+        assertEquals(4, 2 + 2);
+    }
 }
