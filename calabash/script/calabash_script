@@ -1,5 +1,8 @@
 cd ..
 
+SCREENSHOT_VIA_USB=false
+export SCREENSHOT_VIA_USB=false
+
 PARAMS="-p android"
 
 while getopts ":rd:" OPTION; do
