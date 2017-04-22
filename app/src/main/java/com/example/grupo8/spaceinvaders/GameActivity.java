@@ -19,38 +19,37 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import java.util.Random;
 
-
 public class GameActivity extends Activity {
 
     //DECLARACION DE VARIABLEs
 
-    private TextView tx;
-    private TextView txt_lives;
-    private String scored;
-    private String str_lives;
-    private int score;
-    private int width;
-    private int height;
-    private int lives=3;
+    public TextView tx;
+    public TextView txt_lives;
+    public String scored;
+    public String str_lives;
+    public int score;
+    public int width;
+    public int height;
+    public int lives=3;
 
-    private Handler han_MovimientoCaza = new Handler();
-    private Handler han_MisilVerde = new Handler();
-    private Handler han_MisilRojo = new Handler();
-    private boolean sentidoEnemigo = true;
+    public Handler han_MovimientoCaza = new Handler();
+    public Handler han_MisilVerde = new Handler();
+    public Handler han_MisilRojo = new Handler();
+    public boolean sentidoEnemigo = true;
 
-    private ImageButton jugador;
-    private ImageView misilRojo;
-    private ImageView misilVerde;
-    private int densidad;
-    private MediaPlayer mp;
+    public ImageButton jugador;
+    public ImageView misilRojo;
+    public ImageView misilVerde;
+    public int densidad;
+    public MediaPlayer mp;
 
-    private ImageView enemigos[] = new ImageView[20];
-    private int enemiesInitialHeight =300;
-    private boolean enemigomuerto = false;
+    public ImageView enemigos[] = new ImageView[20];
+    public int enemiesInitialHeight =300;
+    public boolean enemigomuerto = false;
 
-    private ImageView escudo1;
-    private ImageView escudo2;
-    private ImageView escudo3;
+    public ImageView escudo1;
+    public ImageView escudo2;
+    public ImageView escudo3;
     int counter1=0;
     int counter2=0;
     int counter3=0;
@@ -164,36 +163,7 @@ public class GameActivity extends Activity {
 
             han_MisilVerde.postDelayed(this,0);
 
-            //MUERTE DEL ENEMIGO
-            int i = 0;
-            while (i<20 && !enemigomuerto){
-                if (enemigos[i].getVisibility()==View.VISIBLE){
-                    float centreX=enemigos[i].getX() + enemigos[i].getLayoutParams().width  / 2;
-                    float centreY=enemigos[i].getY() + enemigos[i].getLayoutParams().width /2;
-                    int x= ((int) centreX);
-                    int y= ((int) centreY);
-                    if ((Math.abs(x - misilVerde.getX()) < enemigos[i].getLayoutParams().width / 2)&&
-                            (Math.abs(y - misilVerde.getY()) <enemigos[i].getLayoutParams().height/2)) {
-                        enemigos[i].setVisibility(View.INVISIBLE);
-                        score+=100;
-                        if(score==300){
-                            lives++;
-                        }
-                        if(score==500){
-                            lives+=2;
-                        }
-
-                        if(score==1000){
-                            lives+=5;
-                        }
-                        scored=Integer.toString(score);
-                        tx.setText("PTS: "+scored);
-                        enemigomuerto = true;
-                        misilVerde.setVisibility(View.INVISIBLE);
-                    }
-                }
-                i++;
-            }
+            muerteEnemigo();
             destruccionEscudos(misilRojo.getX(),misilRojo.getY());
         }
     };
@@ -238,7 +208,44 @@ public class GameActivity extends Activity {
         }
     };
 
-    private void destruccionEscudos(float misilX, float misilY){
+    public void muerteEnemigo(){
+        //MUERTE DEL ENEMIGO
+        int i = 0;
+        while (i<20 && !enemigomuerto){
+            if (enemigos[i].getVisibility()==View.VISIBLE){
+                float centreX=enemigos[i].getX() + enemigos[i].getLayoutParams().width  / 2;
+                float centreY=enemigos[i].getY() + enemigos[i].getLayoutParams().width /2;
+                int x= ((int) centreX);
+                int y= ((int) centreY);
+                if ((Math.abs(x - misilVerde.getX()) < enemigos[i].getLayoutParams().width / 2)&&
+                        (Math.abs(y - misilVerde.getY()) <enemigos[i].getLayoutParams().height/2)) {
+                    matarEnemigo(i);
+                }
+            }
+            i++;
+        }
+    }
+
+    public void matarEnemigo(int i){
+        enemigos[i].setVisibility(View.INVISIBLE);
+        score+=100;
+        if(score==300){
+            lives++;
+        }
+        if(score==500){
+            lives+=2;
+        }
+
+        if(score==1000){
+            lives+=5;
+        }
+        scored=Integer.toString(score);
+        tx.setText("PTS: "+scored);
+        enemigomuerto = true;
+        misilVerde.setVisibility(View.INVISIBLE);
+    }
+
+    public void destruccionEscudos(float misilX, float misilY){
         float centreX1=escudo1.getX() + escudo1.getWidth()  / 2;
         float centreY1=escudo1.getY() + escudo1.getHeight() /2;
         float centreX2=escudo2.getX() + escudo2.getWidth()  / 2;
@@ -349,7 +356,7 @@ public class GameActivity extends Activity {
         }
     }
 
-    private void crearEnemigos(){
+    public void crearEnemigos(){
         SharedPreferences prefs = this.getSharedPreferences("SpaceInvaders", Context.MODE_PRIVATE);
         int nextHeight= enemiesInitialHeight;
         int nextWidth=100;
@@ -408,7 +415,7 @@ public class GameActivity extends Activity {
     }
 
 
-    private void reaperecerEnemigos(){
+    public void reaperecerEnemigos(){
         int nextHeight= enemiesInitialHeight;
         int nextWidth=100;
         for(int i = 0;i<20;i++){
@@ -424,7 +431,7 @@ public class GameActivity extends Activity {
         }
     }
 
-    private void calcularSentido(){
+    public void calcularSentido(){
         if(sentidoEnemigo){
             if (enemigos[4].getVisibility()==View.VISIBLE
                     ||enemigos[9].getVisibility()==View.VISIBLE
@@ -509,11 +516,12 @@ public class GameActivity extends Activity {
         }
     }
 
-    private void cambio(){
+    public boolean cambio(){
 
         sentidoEnemigo = !sentidoEnemigo;
         for(int i = 0;i<20;i++){
             enemigos[i].setY(enemigos[i].getY()+25);
         }
+        return sentidoEnemigo;
     }
 }
