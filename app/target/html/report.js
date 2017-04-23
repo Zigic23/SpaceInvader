@@ -20,12 +20,12 @@ formatter.feature({
   ],
   "line": 6,
   "name": "",
-  "description": "Shoot with my spaceship\r\n\r\nAs a\r\nRegular user\r\n\r\nI want\r\nI want to shoot with my ship in order to defeat the enemies and gain points",
+  "description": "Shoot with my spaceship\n\nAs a\nRegular user\n\nI want\nI want to shoot with my ship in order to defeat the enemies and gain points",
   "id": "",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4531608,
+  "duration": 3071789,
   "status": "passed"
 });
 formatter.scenario({
@@ -61,21 +61,21 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 143359007,
+  "duration": 83786417,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 45571,
+  "duration": 55049,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.the_ship_will_launch_a_misil()"
 });
 formatter.result({
-  "duration": 18064,
+  "duration": 28014,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -150,7 +150,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 29149,
+  "duration": 51274,
   "status": "passed"
 });
 formatter.scenario({
@@ -197,14 +197,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 28738,
+  "duration": 21855,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 20938,
+  "duration": 29971,
   "status": "passed"
 });
 formatter.match({
@@ -217,7 +217,7 @@ formatter.match({
   "location": "CucumberStepDefs.misil_reaches_the_enemy_number(String)"
 });
 formatter.result({
-  "duration": 3420671,
+  "duration": 2479677,
   "status": "passed"
 });
 formatter.match({
@@ -230,11 +230,11 @@ formatter.match({
   "location": "CucumberStepDefs.enemy_will_be_defeated(String)"
 });
 formatter.result({
-  "duration": 71435,
+  "duration": 120332,
   "status": "passed"
 });
 formatter.before({
-  "duration": 37360,
+  "duration": 40283,
   "status": "passed"
 });
 formatter.scenario({
@@ -281,14 +281,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 38181,
+  "duration": 20962,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 36128,
+  "duration": 65099,
   "status": "passed"
 });
 formatter.match({
@@ -301,7 +301,7 @@ formatter.match({
   "location": "CucumberStepDefs.misil_reaches_the_enemy_number(String)"
 });
 formatter.result({
-  "duration": 141228,
+  "duration": 152165,
   "status": "passed"
 });
 formatter.match({
@@ -314,11 +314,11 @@ formatter.match({
   "location": "CucumberStepDefs.enemy_will_be_defeated(String)"
 });
 formatter.result({
-  "duration": 53782,
+  "duration": 282209,
   "status": "passed"
 });
 formatter.before({
-  "duration": 48855,
+  "duration": 57577,
   "status": "passed"
 });
 formatter.scenario({
@@ -365,14 +365,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 33665,
+  "duration": 29017,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 30791,
+  "duration": 49994,
   "status": "passed"
 });
 formatter.match({
@@ -385,7 +385,7 @@ formatter.match({
   "location": "CucumberStepDefs.misil_reaches_the_enemy_number(String)"
 });
 formatter.result({
-  "duration": 89499,
+  "duration": 151692,
   "status": "passed"
 });
 formatter.match({
@@ -398,7 +398,7 @@ formatter.match({
   "location": "CucumberStepDefs.enemy_will_be_defeated(String)"
 });
 formatter.result({
-  "duration": 248790,
+  "duration": 73014,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -510,7 +510,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 52961,
+  "duration": 71798,
   "status": "passed"
 });
 formatter.scenario({
@@ -578,14 +578,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 34896,
+  "duration": 35833,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 25864,
+  "duration": 23729,
   "status": "passed"
 });
 formatter.match({
@@ -598,7 +598,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_points(String)"
 });
 formatter.result({
-  "duration": 117416,
+  "duration": 66022,
   "status": "passed"
 });
 formatter.match({
@@ -611,14 +611,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_lives(String)"
 });
 formatter.result({
-  "duration": 101815,
+  "duration": 57240,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.misil_reaches_an_enemy()"
 });
 formatter.result({
-  "duration": 36539,
+  "duration": 27687,
   "status": "passed"
 });
 formatter.match({
@@ -631,7 +631,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_score_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 79646,
+  "duration": 81185,
   "status": "passed"
 });
 formatter.match({
@@ -644,11 +644,11 @@ formatter.match({
   "location": "CucumberStepDefs.the_lives_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 60351,
+  "duration": 75041,
   "status": "passed"
 });
 formatter.before({
-  "duration": 41055,
+  "duration": 55290,
   "status": "passed"
 });
 formatter.scenario({
@@ -716,14 +716,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 32844,
+  "duration": 23175,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 17243,
+  "duration": 25071,
   "status": "passed"
 });
 formatter.match({
@@ -736,7 +736,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_points(String)"
 });
 formatter.result({
-  "duration": 89909,
+  "duration": 74618,
   "status": "passed"
 });
 formatter.match({
@@ -749,14 +749,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_lives(String)"
 });
 formatter.result({
-  "duration": 56656,
+  "duration": 54394,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.misil_reaches_an_enemy()"
 });
 formatter.result({
-  "duration": 48855,
+  "duration": 31800,
   "status": "passed"
 });
 formatter.match({
@@ -769,7 +769,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_score_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 83341,
+  "duration": 75983,
   "status": "passed"
 });
 formatter.match({
@@ -782,11 +782,11 @@ formatter.match({
   "location": "CucumberStepDefs.the_lives_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 65277,
+  "duration": 318687,
   "status": "passed"
 });
 formatter.before({
-  "duration": 55423,
+  "duration": 131730,
   "status": "passed"
 });
 formatter.scenario({
@@ -854,14 +854,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 39823,
+  "duration": 24807,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 34075,
+  "duration": 28081,
   "status": "passed"
 });
 formatter.match({
@@ -874,7 +874,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_points(String)"
 });
 formatter.result({
-  "duration": 89089,
+  "duration": 163473,
   "status": "passed"
 });
 formatter.match({
@@ -887,14 +887,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_lives(String)"
 });
 formatter.result({
-  "duration": 72256,
+  "duration": 170383,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.misil_reaches_an_enemy()"
 });
 formatter.result({
-  "duration": 31202,
+  "duration": 101675,
   "status": "passed"
 });
 formatter.match({
@@ -907,7 +907,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_score_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 86215,
+  "duration": 65683,
   "status": "passed"
 });
 formatter.match({
@@ -920,11 +920,11 @@ formatter.match({
   "location": "CucumberStepDefs.the_lives_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 64046,
+  "duration": 92169,
   "status": "passed"
 });
 formatter.before({
-  "duration": 66919,
+  "duration": 34749,
   "status": "passed"
 });
 formatter.scenario({
@@ -992,14 +992,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_match_has_been_correctly_initialized()"
 });
 formatter.result({
-  "duration": 36949,
+  "duration": 24825,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.clicks_on_the_ship()"
 });
 formatter.result({
-  "duration": 21349,
+  "duration": 38771,
   "status": "passed"
 });
 formatter.match({
@@ -1012,7 +1012,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_points(String)"
 });
 formatter.result({
-  "duration": 167914,
+  "duration": 121184,
   "status": "passed"
 });
 formatter.match({
@@ -1025,14 +1025,14 @@ formatter.match({
   "location": "CucumberStepDefs.the_user_has_lives(String)"
 });
 formatter.result({
-  "duration": 61171,
+  "duration": 81989,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberStepDefs.misil_reaches_an_enemy()"
 });
 formatter.result({
-  "duration": 24633,
+  "duration": 37416,
   "status": "passed"
 });
 formatter.match({
@@ -1045,7 +1045,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_score_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 77183,
+  "duration": 417844,
   "status": "passed"
 });
 formatter.match({
@@ -1058,7 +1058,7 @@ formatter.match({
   "location": "CucumberStepDefs.the_lives_of_the_user_will_be(String)"
 });
 formatter.result({
-  "duration": 63634,
+  "duration": 293262,
   "status": "passed"
 });
 });
